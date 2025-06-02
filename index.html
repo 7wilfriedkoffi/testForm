@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicaf Scholarship Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">Unicaf-GTCO logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Study Online</a></li>
+                <li><a href="#">Requirements</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Up to an 85% Unicaf Scholarship</h1>
+        <p>Study online for an internationally recognised Bachelor's, Master's or Doctoral* degree</p>
+        <p><small>*Offered only through Unicaf University</small></p>
+        <button class="cta-button">Apply for a Scholarship</button>
+    </section>
+    <section id="application-form">
+        <h2>Apply for a Scholarship</h2>
+        <p>Fill in the form below and one of our advisers will contact you soon.</p>
+        <form id="scholarship-form">
+            <div class="form-field">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-field">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="US">United States</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="KE">Kenya</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="ZA">South Africa</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1__________" required>
+            </div>
+            <div class="form-field">
+                <label for="education-level">Current Education Level *</label>
+                <select id="education-level" name="education-level" required>
+                    <option value="">Select Education Level</option>
+                    <option value="high-school">High School Diploma</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="doctorate">Doctoral Degree</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="programme">Available Programme(s) *</label>
+                <select id="programme" name="programme" required>
+                    <option value="">Select a Programme...</option>
+                    {/* Options will be populated dynamically or updated later */}
+                </select>
+            </div>
+            <div class="form-field terms-conditions">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms and Conditions</a>, the <a href="#">Privacy Policy</a> and the <a href="#">Recording Policy</a> (Agreement to the terms is required to submit form)</label>
+            </div>
+            <div class="form-field">
+                <button type="submit" class="submit-button">APPLY NOW!</button>
+            </div>
+        </form>
+    </section>
+    <section id="university-partners">
+        <h2>Our Partner Universities</h2>
+        <div class="free-short-course">
+            <h3>Free Short Course</h3>
+            <p>Receive a <em>FREE Short Course</em> from the University of California Riverside Extension</p>
+            <div class="uni-logo-placeholder">University of California Riverside logo/image</div>
+            <p><small>(provided the minimum required deposit has been paid)</small></p>
+        </div>
+        <div class="university-listings">
+            <div class="university-card">
+                <h4>University of East London (UK)</h4>
+                <div class="uni-logo-placeholder">UEL Logo</div>
+                <button class="toggle-programmes">View Programmes</button>
+                <div class="programmes-list" style="display:none;">
+                    <ul>
+                        <li>MBA</li>
+                        <li>LLM</li>
+                        <li>MSc Big Data Technologies</li>
+                        <li>MSc Computer Science</li>
+                    </ul>
+                    <button class="back-button">Back</button>
+                </div>
+            </div>
+            <div class="university-card">
+                <h4>Liverpool John Moores University (UK)</h4>
+                <div class="uni-logo-placeholder">LJMU Logo</div>
+                <button class="toggle-programmes">View Programmes</button>
+                <div class="programmes-list" style="display:none;">
+                    <ul>
+                        <li>MSc Digital Marketing</li>
+                        <li>MA Mass Communications</li>
+                        <li>MSc Project Management</li>
+                    </ul>
+                    <button class="back-button">Back</button>
+                </div>
+            </div>
+            <div class="university-card">
+                <h4>Unicaf University</h4>
+                <div class="uni-logo-placeholder">Unicaf University Logo</div>
+                <button class="toggle-programmes">View Programmes</button>
+                <div class="programmes-list" style="display:none;">
+                    <ul>
+                        <li>Master of Business Administration</li>
+                        <li>MA Education</li>
+                        <li>MSc Managerial Psychology</li>
+                        <li>PhD Business Administration</li>
+                    </ul>
+                    <button class="back-button">Back</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>What our students say about us</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="student-image-placeholder">Image</div>
+                <h4>Christina Mulwa</h4>
+                <p class="student-details">Liverpool John Moores University<br>MSc in International Public Health - Kenya</p>
+                <blockquote>"Through Unicaf's financial support and the very efficient digital platform, I can study for an MSc in International Public Health at the prestigious Liverpool John Moores University."</blockquote>
+            </div>
+            <div class="testimonial-card">
+                <div class="student-image-placeholder">Image</div>
+                <h4>Emmanuel Chukwezugo Okoli</h4>
+                <p class="student-details">Unicaf University<br>MBA - Nigeria</p>
+                <blockquote>"Unicaf has made it possible for me to study for an MBA online with a reputable university, at a cost I can afford. The flexible schedule of studies means I don’t have to give up my job or my family time."</blockquote>
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer">
+        <div class="footer-content">
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Recording Policy</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">Copyright © 2014 - 2025 Unicaf® | All rights reserved</p>
+            <p class="recaptcha-notice"><small>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</small></p>
+            <div class="mobile-app-link">
+                <p>Download the Unicaf Mobile App for Android</p>
+                <a href="#">
+                    <!-- Placeholder for Google Play image/link -->
+                    <img src="google-play-badge-placeholder.png" alt="Get it on Google Play" style="height: 40px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

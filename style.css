@@ -1,0 +1,729 @@
+/* Basic body reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Adding a default font */
+}
+
+/* Header styling */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003366; /* Unicaf blue */
+}
+
+#main-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#main-header nav ul li {
+    margin-left: 30px; /* Increased spacing */
+}
+
+#main-header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#main-header nav ul li a:hover {
+    color: #ff9900; /* Unicaf orange */
+}
+
+/* Hero section styling */
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e0f2f7; /* Light blue background */
+}
+
+#hero h1 {
+    font-size: 2.8em; /* Slightly larger */
+    margin-bottom: 20px;
+    color: #003366; /* Dark blue color for heading */
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#hero p small {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.cta-button {
+    background-color: #ff9900; /* Orange button */
+    color: white;
+    padding: 15px 35px; /* Slightly larger padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Slightly larger font */
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Application Form Section Styling */
+#application-form {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+}
+
+#application-form h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+#application-form > p { /* Target direct child p for section description */
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#scholarship-form {
+    max-width: 700px; /* Max width for the form */
+    margin: 0 auto; /* Center the form */
+    padding: 30px;
+    background-color: #f9f9f9; /* Light grey background for the form itself */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: #003366; /* Unicaf blue focus */
+    outline: none;
+}
+
+.terms-conditions {
+    display: flex;
+    align-items: flex-start; /* Align checkbox with the start of the label text */
+    margin-bottom: 20px;
+}
+
+.terms-conditions input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px; /* Align checkbox better with the text */
+    width: auto; /* Override default width for checkbox */
+    flex-shrink: 0; /* Prevent checkbox from shrinking */
+}
+
+.terms-conditions label {
+    font-size: 0.9em;
+    color: #555;
+    font-weight: normal; /* Normal weight for terms label */
+    line-height: 1.4;
+}
+
+.terms-conditions label a {
+    color: #003366; /* Unicaf blue for links */
+    text-decoration: underline;
+}
+
+.submit-button {
+    background-color: #003366; /* Unicaf blue button */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #002244; /* Darker Unicaf blue on hover */
+}
+
+/* University Partners Section Styling */
+#university-partners {
+    padding: 40px 20px;
+    background-color: #f0f4f8; /* Light grayish blue background */
+}
+
+#university-partners h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.free-short-course {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #ff9900; /* Unicaf orange accent */
+    padding: 20px;
+    margin: 0 auto 40px auto; /* Centered with bottom margin */
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.free-short-course h3 {
+    font-size: 1.8em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.free-short-course p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.free-short-course p em {
+    font-weight: bold;
+    color: #003366;
+}
+
+.free-short-course .uni-logo-placeholder {
+    font-size: 1em;
+    color: #777;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin: 15px auto;
+    max-width: 300px; /* Placeholder width */
+}
+
+.free-short-course p small {
+    font-size: 0.85em;
+    color: #555;
+}
+
+.university-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards if they don't fill the row */
+    gap: 30px; /* Spacing between cards */
+}
+
+.university-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Adjust for 3 cards per row, considering gap. (2*gap)/num_cards for margin calc */
+    min-width: 280px; /* Minimum width for smaller screens / responsiveness */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.university-card h4 {
+    font-size: 1.4em;
+    color: #003366;
+    margin-bottom: 15px;
+    min-height: 2.8em; /* Ensure space for two lines of text */
+}
+
+.university-card .uni-logo-placeholder {
+    font-size: 1em;
+    color: #777;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 80%; /* Relative to card */
+    min-height: 60px; /* Placeholder height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-programmes, .back-button {
+    background-color: #0055a5; /* A slightly different blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to bottom if card heights vary */
+    transition: background-color 0.3s ease;
+}
+
+.toggle-programmes:hover, .back-button:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+.programmes-list {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%; /* Take full width of card */
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.programmes-list ul {
+    list-style-type: disc; /* Default disc bullets */
+    padding-left: 25px; /* Indent list */
+    margin-bottom: 15px;
+}
+
+.programmes-list ul li {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    color: #333;
+}
+
+.programmes-list .back-button {
+    display: block; /* Make back button block to center it */
+    margin: 10px auto 0 auto; /* Center the back button */
+}
+
+/* Testimonials Section Styling */
+#testimonials {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background, or a very light grey like #fdfdfd */
+}
+
+#testimonials h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #003366;
+    margin-bottom: 40px; /* More space after heading */
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center items */
+    gap: 30px; /* Spacing between testimonial cards */
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.testimonial-card {
+    background-color: #f9f9f9; /* Light background for card */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    width: calc(50% - 35px); /* Two cards per row, adjust for gap (gap/2 for margin calc) */
+    min-width: 300px; /* Min width before wrapping */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content like image and name */
+    text-align: center; /* Center text for name and details */
+}
+
+.student-image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%; /* Circular placeholder */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.testimonial-card h4 { /* Student Name */
+    font-size: 1.3em;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.testimonial-card .student-details { /* University and Programme */
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.testimonial-card blockquote {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    font-style: italic;
+    border-left: 4px solid #ff9900; /* Accent color for quote */
+    padding-left: 15px;
+    margin: 0; /* Reset default blockquote margin */
+    text-align: left; /* Align quote text to the left for readability */
+}
+
+/* Footer Styling */
+#main-footer {
+    background-color: #333333; /* Dark grey background */
+    color: #cccccc; /* Light grey text */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px; /* Row and column gap */
+}
+
+.footer-links ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+
+.recaptcha-notice {
+    font-size: 0.75em;
+    margin-bottom: 15px;
+}
+
+.recaptcha-notice a {
+    color: #cccccc; /* Match link color */
+    text-decoration: underline;
+}
+
+.recaptcha-notice a:hover {
+    color: #ffffff;
+}
+
+.mobile-app-link {
+    margin-top: 20px;
+}
+
+.mobile-app-link p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.mobile-app-link img {
+    /* Assuming a placeholder image, actual styling might depend on the image */
+    height: 40px; /* Default height */
+    border: 1px solid #555; /* Optional border for placeholder */
+    border-radius: 4px;
+}
+
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+    #main-header {
+        padding: 15px 20px;
+    }
+
+    #main-header nav ul li {
+        margin-left: 20px;
+    }
+
+    #hero h1 {
+        font-size: 2.4em;
+    }
+
+    #hero p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    #application-form h2,
+    #university-partners h2,
+    #testimonials h2 {
+        font-size: 2em;
+    }
+
+    #scholarship-form {
+        padding: 20px;
+    }
+    
+    .university-card {
+        width: calc(50% - 35px); /* 2 cards per row */
+        min-width: 260px; 
+    }
+
+    .testimonial-card {
+        width: calc(50% - 35px); /* Still 2 cards, but allow more space if needed */
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    #main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+
+    #main-header nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #main-header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    #main-header nav ul li:last-child {
+        margin-bottom: 0;
+    }
+     #main-header nav ul li a {
+        display: block; /* Make links take full width for easier tapping */
+        padding: 8px 0;
+    }
+
+
+    #hero {
+        padding: 40px 15px;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+    
+    .cta-button {
+        padding: 12px 20px;
+        font-size: 1em;
+        width: 80%;
+        max-width: 280px;
+    }
+
+    #application-form {
+        padding: 30px 15px;
+    }
+    
+    #application-form h2,
+    #university-partners h2,
+    #testimonials h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+    
+    #application-form > p {
+        margin-bottom: 20px;
+    }
+
+    #scholarship-form {
+        padding: 15px; /* Reduced padding on small screens */
+    }
+
+    .form-field input[type="text"],
+    .form-field input[type="email"],
+    .form-field input[type="tel"],
+    .form-field select {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+    
+    .submit-button {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+
+    .terms-conditions label {
+        font-size: 0.85em;
+    }
+    
+    #university-partners {
+        padding: 30px 15px;
+    }
+
+    .free-short-course {
+        padding: 15px;
+    }
+    .free-short-course h3 {
+        font-size: 1.5em;
+    }
+    .free-short-course p {
+        font-size: 1em;
+    }
+
+    .university-listings {
+        gap: 20px;
+    }
+
+    .university-card {
+        width: 100%; /* 1 card per row */
+        min-width: unset; /* Remove min-width */
+        margin-bottom: 20px; /* Add margin between stacked cards */
+    }
+    .university-card:last-child {
+        margin-bottom: 0;
+    }
+    
+    .university-card h4 {
+        min-height: auto; /* Reset min-height */
+    }
+
+    #testimonials {
+        padding: 30px 15px;
+    }
+
+    .testimonials-container {
+        gap: 20px;
+    }
+    
+    .testimonial-card {
+        width: 100%; /* 1 card per row */
+        min-width: unset; /* Remove min-width */
+        padding: 20px;
+    }
+    
+    .student-image-placeholder {
+        width: 80px;
+        height: 80px;
+    }
+    .testimonial-card h4 {
+        font-size: 1.2em;
+    }
+    .testimonial-card .student-details {
+        font-size: 0.9em;
+    }
+    .testimonial-card blockquote {
+        font-size: 0.95em;
+    }
+
+    #main-footer {
+        padding: 20px 15px;
+    }
+
+    .footer-links ul {
+        flex-direction: column; /* Stack links */
+        gap: 10px;
+    }
+    
+    .footer-links ul li a {
+        font-size: 0.85em;
+    }
+
+    .copyright, .recaptcha-notice, .mobile-app-link p {
+        font-size: 0.8em;
+    }
+    .mobile-app-link img {
+        height: 35px; /* Slightly smaller image */
+    }
+}
+
+/* Extra small devices (some phones in portrait, less than 480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+    #hero h1 {
+        font-size: 1.7em;
+    }
+    #hero p {
+        font-size: 0.9em;
+    }
+
+    #application-form h2,
+    #university-partners h2,
+    #testimonials h2 {
+        font-size: 1.6em;
+    }
+    
+    .free-short-course h3 {
+        font-size: 1.3em;
+    }
+    .free-short-course p {
+        font-size: 0.9em;
+    }
+    
+    .university-card h4 {
+        font-size: 1.2em;
+    }
+    .toggle-programmes, .back-button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+    .programmes-list ul li {
+        font-size: 0.9em;
+    }
+
+    .testimonial-card h4 {
+        font-size: 1.1em;
+    }
+     .testimonial-card blockquote {
+        font-size: 0.9em;
+    }
+}
